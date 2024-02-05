@@ -101,12 +101,15 @@
 		4CA718CE2B70839800336A27 /* Mangan */ = {
 			isa = PBXGroup;
 			children = (
-				4CA718CF2B70839800336A27 /* AppDelegate.swift */,
-				4CA718D12B70839800336A27 /* SceneDelegate.swift */,
+				4CA719022B7083CD00336A27 /* Bootstrap */,
+				4CA719032B70841600336A27 /* Data */,
+				4CA719072B70843400336A27 /* Domain */,
+				4CA719062B70842F00336A27 /* Presenter */,
+				4CA719052B70842400336A27 /* Resources */,
+				4CA719042B70841E00336A27 /* Utils */,
 				4CA718D32B70839800336A27 /* ViewController.swift */,
 				4CA718D52B70839800336A27 /* Main.storyboard */,
 				4CA718DB2B70839900336A27 /* Assets.xcassets */,
-				4CA718DD2B70839900336A27 /* LaunchScreen.storyboard */,
 				4CA718E02B70839900336A27 /* Info.plist */,
 				4CA718D82B70839800336A27 /* Mangan.xcdatamodeld */,
 			);
@@ -128,6 +131,115 @@
 				4CA718F52B70839900336A27 /* ManganUITestsLaunchTests.swift */,
 			);
 			path = ManganUITests;
+			sourceTree = "<group>";
+		};
+		4CA719022B7083CD00336A27 /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				4CA719082B70844E00336A27 /* Base */,
+				4CA718CF2B70839800336A27 /* AppDelegate.swift */,
+				4CA718D12B70839800336A27 /* SceneDelegate.swift */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		4CA719032B70841600336A27 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4CA7190A2B7084FF00336A27 /* Datasource */,
+				4CA719092B7084FB00336A27 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4CA719042B70841E00336A27 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4CA719052B70842400336A27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4CA719062B70842F00336A27 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4CA719072B70843400336A27 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4CA7190F2B70854400336A27 /* Models */,
+				4CA719102B70854C00336A27 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4CA719082B70844E00336A27 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4CA718DD2B70839900336A27 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4CA719092B7084FB00336A27 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4CA7190A2B7084FF00336A27 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				4CA7190C2B70851300336A27 /* Local */,
+				4CA7190D2B70851800336A27 /* Remote */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		4CA7190C2B70851300336A27 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		4CA7190D2B70851800336A27 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				4CA7190E2B70852E00336A27 /* Response */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		4CA7190E2B70852E00336A27 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		4CA7190F2B70854400336A27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4CA719102B70854C00336A27 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,9 +573,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.Mangan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -489,9 +604,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.Mangan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -508,9 +626,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ManganTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mangan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mangan";
 			};
 			name = Debug;
@@ -528,9 +649,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ManganTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mangan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mangan";
 			};
 			name = Release;
@@ -546,9 +670,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ManganUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = Mangan;
 			};
 			name = Debug;
@@ -564,9 +691,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ManganUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = Mangan;
 			};
 			name = Release;
