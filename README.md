@@ -22,4 +22,4 @@ Track and manage your nutrition intake with this UIKit-based iOS app. Utilizes V
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [Apache License](LICENSE).
